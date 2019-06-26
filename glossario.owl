@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_displayName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_displayName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_displayName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_guid"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_language"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_longDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_qualifiedName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_shortDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_usage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_guid -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_guid"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_language -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_longDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_longDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_qualifiedName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_qualifiedName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_shortDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_shortDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_usage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_usage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_displayName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_displayName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Anchor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Anchor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Categories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Categories"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#has_guid"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Terms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Terms"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossario1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossario1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+        <has_displayName rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossario1"/>
+        <has_language rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#nbsp"/>
+        <has_longDescription rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#nbsp"/>
+        <has_shortDescription rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#nbsp"/>
+        <has_usage rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#nbsp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-cat-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-cat-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Categories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-cat-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-cat-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Categories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-subcat-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-subcat-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Categories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-subcat-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#gloss-subcat-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Categories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#nbsp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#nbsp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#Glossary"/>
+        <has_guid rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-6#nbsp"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

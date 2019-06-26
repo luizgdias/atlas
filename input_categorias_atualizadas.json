@@ -1,0 +1,62 @@
+{"qualifiedName": "sul@Regioes", "guid": "", "name": "sul", "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"qualifiedName": "sudeste@Regioes", "guid": "", "name": "sudeste", "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"qualifiedName": "centro_oeste@Regioes", "guid": "", "name": "centro_oeste", "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"qualifiedName": "nordeste@Regioes", "guid": "", "name": "nordeste", "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "goias", "parentCategory": {"categoryGuid": "77041d57-36a3-41bb-8933-628e16348ce5"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "mato_grosso", "parentCategory": {"categoryGuid": "77041d57-36a3-41bb-8933-628e16348ce5"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "mato_grosso_do_sul", "parentCategory": {"categoryGuid": "77041d57-36a3-41bb-8933-628e16348ce5"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "para", "parentCategory": {"categoryGuid": "4b5b1333-25da-4b69-aaf8-da6073fd748a"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "amazonas", "parentCategory": {"categoryGuid": "4b5b1333-25da-4b69-aaf8-da6073fd748a"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "acre", "parentCategory": {"categoryGuid": "4b5b1333-25da-4b69-aaf8-da6073fd748a"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "rondonia", "parentCategory": {"categoryGuid": "4b5b1333-25da-4b69-aaf8-da6073fd748a"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "roraima", "parentCategory": {"categoryGuid": "4b5b1333-25da-4b69-aaf8-da6073fd748a"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "amapa", "parentCategory": {"categoryGuid": "4b5b1333-25da-4b69-aaf8-da6073fd748a"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "rio_grande_o_sul", "parentCategory": {"categoryGuid": "43c0ee5d-8bad-4870-bae4-70290d453540"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "santa_catarina", "parentCategory": {"categoryGuid": "43c0ee5d-8bad-4870-bae4-70290d453540"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "parana", "parentCategory": {"categoryGuid": "43c0ee5d-8bad-4870-bae4-70290d453540"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "rio_de_janeiro", "parentCategory": {"categoryGuid": "0f7edae7-b135-4a9d-9ca9-2c7192767820"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "minas_gerais", "parentCategory": {"categoryGuid": "0f7edae7-b135-4a9d-9ca9-2c7192767820"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "sao_paulo", "parentCategory": {"categoryGuid": "0f7edae7-b135-4a9d-9ca9-2c7192767820"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "espirito_santo", "parentCategory": {"categoryGuid": "0f7edae7-b135-4a9d-9ca9-2c7192767820"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "bahia", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "sergipe", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "alagoas", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "pernambuco", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "paraiba", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "rio_grande_do_norte", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "ceara", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "piaui", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "maranhao", "parentCategory": {"categoryGuid": "bba62b3e-9373-4d40-9686-3832dfd237ef"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"qualifiedName": "norte@Regioes", "guid": "", "name": "norte", "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"name": "df", "parentCategory": {"categoryGuid": "77041d57-36a3-41bb-8933-628e16348ce5"}, "anchor": {"glossaryGuid": "d69688eb-4c13-4afa-b659-219441db1681", "relationGuid": ""}}
+{"qualifiedName": "sul@Regioes", "guid": "", "name": "sul", "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"qualifiedName": "sudeste@Regioes", "guid": "", "name": "sudeste", "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"qualifiedName": "centro_oeste@Regioes", "guid": "", "name": "centro_oeste", "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"qualifiedName": "nordeste@Regioes", "guid": "", "name": "nordeste", "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "goias", "parentCategory": {"categoryGuid": "d0a06525-6545-48fb-9c3b-fadf4043da27"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "mato_grosso", "parentCategory": {"categoryGuid": "d0a06525-6545-48fb-9c3b-fadf4043da27"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "mato_grosso_do_sul", "parentCategory": {"categoryGuid": "d0a06525-6545-48fb-9c3b-fadf4043da27"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "para", "parentCategory": {"categoryGuid": "5dda69de-5e5e-4f60-a124-d86ce1f56c5a"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "amazonas", "parentCategory": {"categoryGuid": "5dda69de-5e5e-4f60-a124-d86ce1f56c5a"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "acre", "parentCategory": {"categoryGuid": "5dda69de-5e5e-4f60-a124-d86ce1f56c5a"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "rondonia", "parentCategory": {"categoryGuid": "5dda69de-5e5e-4f60-a124-d86ce1f56c5a"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "roraima", "parentCategory": {"categoryGuid": "5dda69de-5e5e-4f60-a124-d86ce1f56c5a"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "amapa", "parentCategory": {"categoryGuid": "5dda69de-5e5e-4f60-a124-d86ce1f56c5a"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "rio_grande_o_sul", "parentCategory": {"categoryGuid": "8360c2aa-0fe4-412b-9f98-24580c867e7b"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "santa_catarina", "parentCategory": {"categoryGuid": "8360c2aa-0fe4-412b-9f98-24580c867e7b"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "parana", "parentCategory": {"categoryGuid": "8360c2aa-0fe4-412b-9f98-24580c867e7b"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "rio_de_janeiro", "parentCategory": {"categoryGuid": "09ed2fbc-18d1-49ef-a77f-ce8fdfa21f73"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "minas_gerais", "parentCategory": {"categoryGuid": "09ed2fbc-18d1-49ef-a77f-ce8fdfa21f73"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "sao_paulo", "parentCategory": {"categoryGuid": "09ed2fbc-18d1-49ef-a77f-ce8fdfa21f73"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "espirito_santo", "parentCategory": {"categoryGuid": "09ed2fbc-18d1-49ef-a77f-ce8fdfa21f73"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "bahia", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "sergipe", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "alagoas", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "pernambuco", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "paraiba", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "rio_grande_do_norte", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "ceara", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "piaui", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "maranhao", "parentCategory": {"categoryGuid": "b5aabae9-34d3-4b76-9fb6-9030a4c6214f"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"qualifiedName": "norte@Regioes", "guid": "", "name": "norte", "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}
+{"name": "df", "parentCategory": {"categoryGuid": "d0a06525-6545-48fb-9c3b-fadf4043da27"}, "anchor": {"glossaryGuid": "d70d5df7-dbc0-4bda-b372-1d6327aeb88e", "relationGuid": ""}}

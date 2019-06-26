@@ -1,0 +1,207 @@
+[{"guid":"91d97bfa-461c-4e94-a24d-63b3f1fbb0bb","qualifiedName":"Taxonomia","name":"Taxonomia","categories":
+	[	{"categoryGuid":"39daad25-2d8b-4ac3-95fc-bf92df2424be","relationGuid":"108c8da7-6771-4610-ad0c-61612fa003c4","displayText":"Genero"},
+		{"categoryGuid":"650e8c3c-a9cb-4807-a40c-df4e47c6a0d5","relationGuid":"39870c3d-3d63-4808-b37c-a3a4a2c80c6b","displayText":"Classe"},
+		{"categoryGuid":"a028b916-45f1-4fb2-8cae-6c3412edd6a2","relationGuid":"87813c64-7cc4-4136-b14b-9dd8d174a4ea","displayText":"Reino"},
+		{"categoryGuid":"0455c7a7-cdeb-436a-8f4e-d49d78fb324c","relationGuid":"97a51d6a-c9fd-4d54-9942-d1ef35ffbb6b","displayText":"Filo"},
+		{"categoryGuid":"62e675bb-2229-4d3c-ae1c-1526372e669d","relationGuid":"154fd49e-f821-4f89-a1ea-c4184608bacb","displayText":"Familia"},
+		{"categoryGuid":"c4f81142-b6a4-45b3-9089-114421173e4e","relationGuid":"fabf47bd-6bcd-4e1d-9c8c-9c14eca55a67","displayText":"Especie"},
+		{"categoryGuid":"65393a00-8ee5-4c42-ad3f-19cb3182201e","relationGuid":"d01565d6-37c7-45e3-89e1-43e70f80933c","displayText":"Ordem"}
+	]
+}]
+
+
+[{"guid":"","qualifiedName":"Taxonomia2","name":"Taxonomia2","categories2":
+	[	
+		{"categoryGuid":"","relationGuid":"","displayText":"Genero2"}
+	]
+}]
+
+
+[
+	{"guid":"","qualifiedName":"Taxonomia2","name":"Taxonomia","categories":
+		[	{"categoryGuid":"","relationGuid":"","displayText":"sub-categoria1"},
+			{"categoryGuid":"","relationGuid":"","displayText":"sub-categoria2"},
+			{"categoryGuid":"","relationGuid":"","displayText":"sub-categoria3"},
+			{"categoryGuid":"","relationGuid":"","displayText":"sub-categoria4"},
+
+		]
+	}
+]
+
+{"guid":"9ccf29c9-dc4d-4ddf-8310-3b3e6b508f0c","qualifiedName":"sub-cat-gloss01@gloss01","name":"sub-cat-gloss01","anchor":{"glossaryGuid":"700709b6-4996-4a46-9efe-ed9b1efeea60","relationGuid":"ded60819-155d-4f5b-a81f-ce9d34cfb967"}}
+
+-------------------------------------------------
+Glossario:
+
+"guid": "",
+	"qualifiedName": "",
+	"displayName": "Banking",
+	"shortDescription": "Glossary of bank",
+	"longDescription": "Glossary of bank - long description",
+	"language": "English",
+	"usage": "N/A",
+}
+Categorias:
+
+{
+	"guid": "7f041401-de8c-443f-a3b7-7bf5a910ff6f",
+	"qualifiedName": "Loans.Customer@HortoniaBank",
+	"displayName": "Loans",
+	"shortDescription": "Loan categorization",
+	"anchor": {
+		"glossaryGuid": "2f341934-f18c-48b3-aa12-eaa0a2bfce85",
+		"relationGuid": "7757b031-4e25-43a8-bf77-946f7f06c67a"
+	},
+	"parentCategory": {
+		"categoryGuid": "e6a3df1f-5670-4f9e-84da-91f77d008ce3",
+		"relationGuid": "8a0a8e11-0bb5-483b-b7d6-cfe0b1d55ef6"
+	},
+	"childrenCategories" : [],
+	"terms": [{}, {}]
+}
+----------------------------------------------------
+{"guid":"","qualifiedName":"sub-cat-gloss01@gloss01","name":"sub-cat1-gloss01","anchor":{"glossaryGuid":"","relationGuid":""}}
+{"guid":"","qualifiedName":"sub-cat-gloss02@gloss01","name":"sub-cat2-gloss01","anchor":{"glossaryGuid":"","relationGuid":""}}
+{"guid":"","qualifiedName":"sub-cat-gloss03@gloss01","name":"sub-cat3-gloss01","anchor":{"glossaryGuid":"","relationGuid":""}}
+
+
+
+---------------------------------------------------
+
+# -*- coding: utf-8 -*-
+import requests
+import json
+import string
+
+# response = requests.post('http://10.100.16.58:21000/api/atlas/v2/glossary', auth=('admin', 'hortonworks1'), headers={'Content-Type': 'application/json'}, json=arquivo_json)
+# print response.status_code  # 200 significa requisição OK
+# a = response.json()
+# print a
+
+#reading name attribute 
+
+arquivo = open('input_glossarios.json','r')
+for linha in arquivo:
+	linha = linha.rstrip()
+	print linha
+	linha_json_glossario = json.loads(linha)
+	nome_glossario = linha_json_glossario.get("name")
+	print "Atributo do json de glossario: "+nome_glossario+"\n"
+	response = requests.post('http://10.100.16.58:21000/api/atlas/v2/glossary', auth=('admin', 'hortonworks1'), headers={'Content-Type': 'application/json'}, json=linha_json_glossario)
+	print response.status_code  # 200 significa requisição OK
+	a = response.json()
+	print "Linha do json de glossario: "
+	print linha_json_glossario
+	print a
+
+	with open('atlas_response_glossario.json', 'w') as outfile:
+		json.dump(a, outfile)
+
+	#pegando o id do glossario para vincular na categoria
+	response_glossario = open('atlas_response_glossario.json', 'r')
+	for linha_response_glossario in response_glossario:
+		linha_response_glossario = linha_response_glossario.rstrip()
+		linha_response_glossario_json = json.loads(linha_response_glossario)
+		guid_glossario = linha_response_glossario_json.get("guid")
+		print "guid do glossario"
+		print guid_glossario
+	response_glossario.close()
+
+	#abrindo o json das categorias para verificar quais pertencem a qual glossario
+	arquivo_categorias = open('input_categorias.json','r')
+	for linha_categorias in arquivo_categorias:
+		linha_categorias = linha_categorias.rstrip()
+		print "Linha do json de categorias: "
+		print linha_categorias
+		linha_json_categorias = json.loads(linha_categorias)
+		qualified_name = linha_json_categorias.get("qualifiedName")
+		name = linha_json_categorias.get("name")
+		
+		#Verifica se a categoria pertence ao glossario pois procura o nome do glossario no qualifiedName da categoria: "qualifiedName":"sub-cat-gloss01@gloss01"
+		if (nome_glossario in name):
+			categoria_atualizada = '{\"guid\":"","qualifiedName":"'+qualified_name+'","name":"'+name+'","anchor":{"glossaryGuid":"'+guid_glossario+'","relationGuid":""} }\n'
+			print "Categoria Atualizada"
+			print categoria_atualizada
+			categoria_atualizada_file = open('categorias_atualizadas.json', 'a')
+			categoria_atualizada = json.loads(categoria_atualizada)
+    			json.dump(categoria_atualizada, categoria_atualizada_file)
+    			categoria_atualizada_file.write('\n')
+    			response2 = requests.post('http://10.100.16.58:21000/api/atlas/v2/glossary/category', auth=('admin', 'hortonworks1'), headers={'Content-Type': 'application/json'}, json=categoria_atualizada)
+		else:
+			print "glossario nao esta em categoria"
+
+	arquivo_categorias.close()
+arquivo.close()
+
+#salvando o resultado da inserção no arquivo atlas.json
+
+
+
+
+{"qualifiedName": "sub-cat-gloss01@gloss01", "guid": "", "name": "sub-cat1-gloss01", "anchor": {"glossaryGuid": "fad9da0d-94f6-4bbe-b0d0-33666123e9cd", "relationGuid": ""}}
+{"qualifiedName": "sub-cat-gloss02@gloss01", "guid": "", "name": "sub-cat2-gloss01", "anchor": {"glossaryGuid": "fad9da0d-94f6-4bbe-b0d0-33666123e9cd", "relationGuid": ""}}
+{"qualifiedName": "sub-cat-gloss03@gloss01", "guid": "", "name": "sub-cat3-gloss01", "anchor": {"glossaryGuid": "fad9da0d-94f6-4bbe-b0d0-33666123e9cd", "relationGuid": ""}}
+{"qualifiedName": "sub-cat-gloss01@gloss01", "guid": "", "name": "sub-cat1-gloss01", "anchor": {"glossaryGuid": "c9c3fa2f-e332-465f-aafb-1b39df9313df", "relationGuid": ""}}
+{"qualifiedName": "sub-cat-gloss02@gloss01", "guid": "", "name": "sub-cat2-gloss01", "anchor": {"glossaryGuid": "c9c3fa2f-e332-465f-aafb-1b39df9313df", "relationGuid": ""}}
+{"qualifiedName": "sub-cat-gloss03@gloss01", "guid": "", "name": "sub-cat3-gloss01", "anchor": {"glossaryGuid": "c9c3fa2f-e332-465f-aafb-1b39df9313df", "relationGuid": ""}}
+
+
+----------------------------------------------------
+Glossario_nome: Glossario1
+classe: 
+
+
+
+{"guid":"57daabdc-7c1a-4a3e-b9ca-3109a789a7e1","qualifiedName":"t1@RegioesxEstados","name":"t1","anchor":{"glossaryGuid":"297983b9-1e31-41e4-b359-b59411d5cb28","relationGuid":"28b0382d-2bf0-4f2d-ae14-630adec231c3"}}
+
+{"guid":"6eecaeb6-d422-471e-a35c-773743d6c0a7","qualifiedName":"t2.t1@RegioesxEstados","name":"t2","anchor":{"glossaryGuid":"297983b9-1e31-41e4-b359-b59411d5cb28","relationGuid":"8bfb3fd6-b436-48b5-87fa-71fdbf33c6fa"},"parentCategory":{"categoryGuid":"57daabdc-7c1a-4a3e-b9ca-3109a789a7e1","relationGuid":"c9f81975-1a8e-4ad3-be8d-cd9c6dfd0e44"}}
+
+{"guid":"5dc2b487-bc14-4f21-94e0-c22cdad34453","qualifiedName":"t3.t2.t1@RegioesxEstados","name":"t3","anchor":{"glossaryGuid":"297983b9-1e31-41e4-b359-b59411d5cb28","relationGuid":"09d7a6ac-ae04-44eb-8671-35b27629e183"},"parentCategory":{"categoryGuid":"6eecaeb6-d422-471e-a35c-773743d6c0a7","relationGuid":"526062e2-cbfc-4e70-a2f7-6019052f08f3"}}
+
+
+{guid: "5dc2b487-bc14-4f21-94e0-c22cdad34453", qualifiedName: "t3.t2.t1@RegioesxEstados", name: "t3",…}
+anchor: {glossaryGuid: "297983b9-1e31-41e4-b359-b59411d5cb28",…}
+glossaryGuid: "297983b9-1e31-41e4-b359-b59411d5cb28"
+relationGuid: "09d7a6ac-ae04-44eb-8671-35b27629e183"
+guid: "5dc2b487-bc14-4f21-94e0-c22cdad34453"
+name: "t3"
+parentCategory: {categoryGuid: "6eecaeb6-d422-471e-a35c-773743d6c0a7",…}
+categoryGuid: "6eecaeb6-d422-471e-a35c-773743d6c0a7"
+relationGuid: "526062e2-cbfc-4e70-a2f7-6019052f08f3"
+qualifiedName: "t3.t2.t1@RegioesxEstados"
+
+
+{"guid":"693242d7-a874-4a22-9286-8412ceff0a10","qualifiedName":"teste@Regioes","name":"teste","anchor":{"glossaryGuid":"b9533672-5dc8-4e49-9ad6-c0c1615424b8","relationGuid":"18259fb4-c322-45d5-9bf5-5bb1b99d2511"}}
+
+{guid: "524ba0a4-86e0-46ec-b6f2-e278ee3aa9bd", qualifiedName: "sub.teste@Regioes", name: "sub",…}
+anchor: {glossaryGuid: "b9533672-5dc8-4e49-9ad6-c0c1615424b8",…}
+glossaryGuid: "b9533672-5dc8-4e49-9ad6-c0c1615424b8"
+relationGuid: "699da106-711c-4e9d-a349-0ded3737484e"
+guid: "524ba0a4-86e0-46ec-b6f2-e278ee3aa9bd"
+name: "sub"
+parentCategory: {categoryGuid: "693242d7-a874-4a22-9286-8412ceff0a10",…}
+categoryGuid: "693242d7-a874-4a22-9286-8412ceff0a10"
+relationGuid: "7a617bec-2b0a-4934-9922-7a759bfba544"
+qualifiedName: "sub.teste@Regioes"
+
+
+
+{
+  "anchor" : {
+    "displayText" : "...",
+    "glossaryGuid" : "...",
+    "relationGuid" : "..."
+  },
+  "parentCategory" : {
+    "categoryGuid" : "...",
+    "description" : "...",
+    "displayText" : "...",
+    "parentCategoryGuid" : "...",
+    "relationGuid" : "..."
+  },
+  "name" : "...",
+  "qualifiedName" : "...",
+  "guid" : "..."
+}
+
+{"guid":"04f030eb-6e46-44a8-864e-40723cf0b22d","qualifiedName":"teste.centro_oeste@Regioes","name":"teste","anchor":{"glossaryGuid":"4b6b2e11-308a-4cf4-b521-41a2e322c360","relationGuid":"0ccc46bf-cedc-454f-bc87-c938d17e0aaf"},"parentCategory":{"categoryGuid":"6cd998eb-032c-46af-aa48-fb47e910bc29","relationGuid":"0cbd2ab9-954e-4cb9-a7a3-2d11011a76f2"}}

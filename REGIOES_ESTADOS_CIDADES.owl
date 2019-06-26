@@ -1,0 +1,515 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#BA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#BA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#CE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#CE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Centro-Oeste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Centro-Oeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Regiões"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#DF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#DF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Centro-Oeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#ES -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#ES">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sudeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#GO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#GO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Centro-Oeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sudeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Centro-Oeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Centro-Oeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Regiões"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Regiões"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sul"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RJ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sudeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sul"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Regiões -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Regiões"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sul"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Nordeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sudeste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sudeste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sudeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Regiões"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Regiões"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#TO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#TO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Norte"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Aracaju -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Aracaju">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Belem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Belem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Belo_Horizonte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Belo_Horizonte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MG"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Boa_Vista -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Boa_Vista">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Campo_Grande -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Campo_Grande">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Cuiaba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Cuiaba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Curitiba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Curitiba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Distrito_Federal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Distrito_Federal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#DF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Florianopolis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Florianopolis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Fortaleza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Fortaleza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#CE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Goiania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Goiania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#GO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Joao_Pessoa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Joao_Pessoa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Macapa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Macapa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Maceio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Maceio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Manaus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Manaus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Natal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Natal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Palmas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Palmas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#TO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Porto_Alegre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Porto_Alegre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Porto_Velho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Porto_Velho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Recife -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Recife">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Rio_Branco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Rio_Branco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#AC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Rio_de_Janeiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Rio_de_Janeiro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#RJ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Salvador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Salvador">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#BA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sao_Luis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sao_Luis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#MA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sao_Paulo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Sao_Paulo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#SP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Teresina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Teresina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#PI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Vitoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#Vitoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lmdc/ontologies/2019/5/untitled-ontology-8#ES"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
