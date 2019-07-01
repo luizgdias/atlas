@@ -37,6 +37,7 @@ def save_glossary():
 		os.system('rm buffer_response_atlas.json')
 		return dados_glossario
 
+
 def save_categories(glossary):
 	os.system('touch buffer_response_atlas.json')
 	with open('atlas_response_glossario.json', 'w') as outfile:
@@ -116,7 +117,6 @@ def save_categories(glossary):
 			    			y = x.json()
 			    			json.dump(y, buffer_response)
 			    			buffer_response.write('\n')
-						#update_category()
 		else:
 			print "glossario nao esta em categoria"
 	arquivo_categorias.close()	
@@ -131,7 +131,7 @@ def save_terms(glossario):
 		nome_categoria_do_termo = termos2["categories"]["categoryGuid"]
 		nome_termo 				= termos2["name"]
 		qualifiedName 			= termos2["qualifiedName"]
-		print nome_categoria_do_termo
+		#print nome_categoria_do_termo
 
 		buffer_de_categorias_inseridas 	= open('buffer_response_atlas.json','r')
 		for categorias in buffer_de_categorias_inseridas:
@@ -139,11 +139,13 @@ def save_terms(glossario):
 			categorias2 = json.loads(categorias)
 			nome_categoria = categorias2["name"]
 			
-			print nome_categoria
+			#print nome_categoria
 			
 			if nome_categoria_do_termo == nome_categoria:
 				id_categoria = categorias2["guid"]
-				print 'sim*************'
+				print '\n**************************'
+				print 'Inserting term on base...'
+				print '**************************'
 				print 'nome categoria: '+nome_categoria
 				print 'nome termo: '+nome_categoria_do_termo
 				print 'guid_categoria: '+id_categoria
@@ -154,8 +156,14 @@ def save_terms(glossario):
 				print w.status_code
 				r = w.json()
 				print "Insert term: Successful"
-				
+				print '**************************\n'
 
+#Save_glossary: Lê o arquivo input_glossarios.json e cadastra o glossario no atlas. A variavel glossário é uma lista glossario[0] = nome do glossario
+#glossario[1] = guid do glossario
 glossario = save_glossary()
+
+#Save_categories: salva as categorias descritas no input_categorias.json, no glossario previamente cadastrado
 save_categories(glossario)
+
+#Save_terms: salva os termos descritos no arquivo input_termos.json, na hierarquia desenvolvida nas funções anteriores
 save_terms(glossario[1])
