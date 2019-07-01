@@ -205,3 +205,14 @@ qualifiedName: "sub.teste@Regioes"
 }
 
 {"guid":"04f030eb-6e46-44a8-864e-40723cf0b22d","qualifiedName":"teste.centro_oeste@Regioes","name":"teste","anchor":{"glossaryGuid":"4b6b2e11-308a-4cf4-b521-41a2e322c360","relationGuid":"0ccc46bf-cedc-454f-bc87-c938d17e0aaf"},"parentCategory":{"categoryGuid":"6cd998eb-032c-46af-aa48-fb47e910bc29","relationGuid":"0cbd2ab9-954e-4cb9-a7a3-2d11011a76f2"}}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+para classificar termos:
+
+http://10.100.16.58:21000/api/atlas/v2/glossary/term
+{"guid":"","qualifiedName":"gym@Regioes","name":"gym","anchor":{"glossaryGuid":"12162af2-1572-4e4d-b9f7-2dbc2c1c62ad","relationGuid":"006159fd-47b9-4fb4-b7dc-5dcd23bfd304"},"categories":[{"categoryGuid":"fcc62eca-7751-4863-ac93-20a8013ef153","relationGuid":"1ed999b8-5137-4f16-8412-68d170d2ebab","displayText":"goias"}]}
+
+
+Termos são entidades de domínio e para que sejam úteis e significativos, precisam ser agrupados em torno de seu uso e contexto. Um termo no Apache Atlas deve possuir um nome exclusivo por glossário, dessa forma podem existir dois termos de mesmo nome, entretanto em glossários diferentes. Um nome de termo pode conter espaços, sublinhados e traços, mas não “.” ou “@”, pois a ferramenta utiliza tais caracteres no processo de especificação de hierarquia do glossário. O caractere “.” é utilizado para definir a quais classes o termo pertence, e o caractere “@” para especificar o glossário, dessa forma um glossário simples pode ser definido como nome_termo.nome_subclasse.nome_superclasse@nome_glossario. Tal sequencia é definida como qualifiedName e é gerado de forma automática e transparente ao usuário. 
+
+{"guid":"","qualifiedName":"","name":"ddd","anchor":{"glossaryGuid":"38b10099-c8fa-4011-825b-0b532b20523a","relationGuid":""},"categories":[{"categoryGuid":"goias"}]}

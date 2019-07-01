@@ -1,1 +1,6 @@
-{"guid":"","qualifiedName":"gym@Regioes","name":"gym","anchor":{"glossaryGuid":"12162af2-1572-4e4d-b9f7-2dbc2c1c62ad","relationGuid":"006159fd-47b9-4fb4-b7dc-5dcd23bfd304"},"categories":[{"categoryGuid":"fcc62eca-7751-4863-ac93-20a8013ef153","relationGuid":"1ed999b8-5137-4f16-8412-68d170d2ebab","displayText":"goias"}]}
+{"guid":"","qualifiedName":"goiânia@Regioes","name":"goiânia","anchor":{"glossaryGuid":"","relationGuid":""},"categories":{"categoryGuid":"goias"}}
+{"guid":"","qualifiedName":"beloHotizonte@Regioes","name":"beloHotizonte","anchor":{"glossaryGuid":"","relationGuid":""},"categories":{"categoryGuid":"minas_gerais"}}
+{"guid":"","qualifiedName":"cuiaba@Regioes","name":"cuiaba","anchor":{"glossaryGuid":"","relationGuid":""},"categories":{"categoryGuid":"mato_grosso"}}
+{"guid":"","qualifiedName":"rio_de_janeiro@Regioes","name":"rio_de_janeiro","anchor":{"glossaryGuid":"","relationGuid":""},"categories":{"categoryGuid":"rio_de_janeiro"}}
+{"guid":"","qualifiedName":"brasilia@Regioes","name":"brasilia","anchor":{"glossaryGuid":"","relationGuid":""},"categories":{"categoryGuid":"df"}}
+{"guid":"","qualifiedName":"campo_grande@Regioes","name":"campo_grande","anchor":{"glossaryGuid":"","relationGuid":""},"categories":{"categoryGuid":"mato_grosso_do_sul"}}

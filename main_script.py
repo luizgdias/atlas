@@ -37,9 +37,6 @@ def save_glossary():
 		os.system('rm buffer_response_atlas.json')
 		return dados_glossario
 
-def update_category():
-	print "prestes a atualizar a categoria - Beta version"
-
 def save_categories(glossary):
 	os.system('touch buffer_response_atlas.json')
 	with open('atlas_response_glossario.json', 'w') as outfile:
@@ -71,15 +68,13 @@ def save_categories(glossary):
 			print "Parent Category "+ str(parent_id)
 
 			categoria_atualizada = '{"guid":"","qualifiedName":"'+ qualified_name +'","name":"'+ name +'","anchor":{"glossaryGuid":"'+ guid_glossary +'","relationGuid":""} }'
-			# print "\n essa é a categoria atualizada: \n"
-			# print categoria_atualizada
-			#verificar se a categoria tem pai
+			
+			#verificar se a categoria não tem pai
 			if (not parent_id):
-				print "Essa categoria não tem um pai"
-				categoria_atualizada_file = open('input_categorias_atualizadas.json', 'a')
-				buffer_response = open('buffer_response_atlas.json', 'a')
-				print "**CATEGORIA ATUALIZADA**"
-				print categoria_atualizada
+				print "***Categoria não possui pai***"
+				categoria_atualizada_file 	= open('input_categorias_atualizadas.json', 'a')
+				buffer_response 			= open('buffer_response_atlas.json', 'a')
+				
 				categoria_atualizada = json.loads(categoria_atualizada)
 	    			json.dump(categoria_atualizada, categoria_atualizada_file)
 	    			categoria_atualizada_file.write('\n')
@@ -89,9 +84,10 @@ def save_categories(glossary):
 	    			json.dump(b, buffer_response)
 	    			buffer_response.write('\n')
 	    			print "\n"
-					
+
+			#se a categoria tiver pai ela 'subcategoria'		
 			else:
-				print "***Essa tem um pai***"
+				print "***Categoria possui pai***"
 				print "parent_id: "
 				print parent_id
 
@@ -105,11 +101,9 @@ def save_categories(glossary):
 					relation_guid 		= linha_buffer_de_categorias_inseridas_json["anchor"]["relationGuid"]
 
 					if (parent_id == nome_pai_categoria):
-						#subcategoria_atualizada = '{"guid":"","qualifiedName":"'+qualified_name+'","name":"'+name+'","anchor":{"glossaryGuid":"'+guid_glossary+'","relationGuid":"'+relation_guid+'"},"parentCategory":{"categoryGuid":"'+guid_pai_categoria+'","relationGuid":""} }'
 						subcategoria_atualizada = '{"name":"'+ name +'","anchor":{"glossaryGuid":"'+ guid_glossary +'","relationGuid":""}, "parentCategory":{"categoryGuid":"'+guid_pai_categoria+'"}}'
-						print "O pai da categoria é, "
+						print "***O pai da categoria***: "
 						print nome_pai_categoria
-						print subcategoria_atualizada
 
 						subcategoria_atualizada_file = open('input_categorias_atualizadas.json', 'a')
 						buffer_response = open('buffer_response_atlas.json', 'a')
@@ -126,22 +120,42 @@ def save_categories(glossary):
 		else:
 			print "glossario nao esta em categoria"
 	arquivo_categorias.close()	
-	print"**FINISHED**"
+	print"***FINISHED***"
 
 
-def save_terms():
-	print "salvar termos"
-	input_termos = open('input_termos.json','r')
-	response_termos = open('response_termos.json','a')
-	for linha in input_termos:
-		linha = linha.rstrip()
-		print linha
-		linha_json_termos = json.loads(linha)
-		nome_termo = linha_json_termos.get("name")
-		print nome_termo
+def save_terms(glossario):
+	input_termos 					= open('input_termos.json','r')
+	for termos in input_termos:
+		termos = termos.rstrip()
+		termos2 = json.loads(termos)
+		nome_categoria_do_termo = termos2["categories"]["categoryGuid"]
+		nome_termo 				= termos2["name"]
+		qualifiedName 			= termos2["qualifiedName"]
+		print nome_categoria_do_termo
 
+		buffer_de_categorias_inseridas 	= open('buffer_response_atlas.json','r')
+		for categorias in buffer_de_categorias_inseridas:
+			categorias = categorias.rstrip()
+			categorias2 = json.loads(categorias)
+			nome_categoria = categorias2["name"]
+			
+			print nome_categoria
+			
+			if nome_categoria_do_termo == nome_categoria:
+				id_categoria = categorias2["guid"]
+				print 'sim*************'
+				print 'nome categoria: '+nome_categoria
+				print 'nome termo: '+nome_categoria_do_termo
+				print 'guid_categoria: '+id_categoria
+				termo = '{"guid":"","qualifiedName":"'+qualifiedName+'","name":"'+nome_termo+'","anchor":{"glossaryGuid":"'+glossario+'","relationGuid":""},"categories":[{"categoryGuid":"'+id_categoria+'"}]}'
+				x = json.loads(termo)
+				print termo
+				w = requests.post('http://10.100.16.58:21000/api/atlas/v2/glossary/term', auth=('admin', 'hortonworks1'), headers={'Content-type': 'application/json'}, json=x)
+				print w.status_code
+				r = w.json()
+				print "Insert term: Successful"
+				
 
-#glossario = save_glossary()
-#save_categories(glossario)
-
-save_terms()
+glossario = save_glossary()
+save_categories(glossario)
+save_terms(glossario[1])

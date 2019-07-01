@@ -29,3 +29,4 @@
 {"guid":"","qualifiedName":"piaui.nordeste@Regioes","displayName":"piaui","shortDescription":"Loan categorization","anchor":{"glossaryGuid":"","relationGuid":""},"parentCategory":{"categoryGuid":"nordeste"}}
 {"guid":"","qualifiedName":"maranhao.nordeste@Regioes","displayName":"maranhao","shortDescription":"Loan categorization","anchor":{"glossaryGuid":"","relationGuid":""},"parentCategory":{"categoryGuid":"nordeste"}}
 {"guid":"","qualifiedName":"df.centro_oeste@Regioes","displayName":"df","shortDescription":"Loan categorization","anchor":{"glossaryGuid":"","relationGuid":""},"parentCategory":{"categoryGuid":"centro_oeste"}}
+{"guid":"","qualifiedName":"litoral@Regioes","displayName":"litoral","shortDescription":"Loan categorization","anchor":{"glossaryGuid":"","relationGuid":""},"parentCategory":{"categoryGuid":""}}
